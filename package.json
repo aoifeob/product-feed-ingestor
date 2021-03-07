@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "product-feed-exercise",
+  "version": "1.0.0",
+  "description": "Product Feed Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "John Butler",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.3.1"
+  }
+}
