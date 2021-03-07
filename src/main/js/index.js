@@ -10,7 +10,7 @@ const {generateMetadata} = require("./service/MetadataGeneratorService");
 const {validateProducts} = require("./service/ProductValidationService");
 
 async function processFeed(inputPath, outputPath){
-   const inputProductsFile = transformCSVToProductsFile(inputPath);
+   const inputProductsFile = await transformCSVToProductsFile(inputPath);
    const validatedProductsFile = new ProductsFile(inputProductsFile.headers, validateProducts(inputProductsFile.products));
 
    writeToCSV(validatedProductsFile, outputPath);

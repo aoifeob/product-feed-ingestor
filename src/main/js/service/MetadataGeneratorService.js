@@ -34,5 +34,5 @@ function getMinPrice(prices){
 }
 
 module.exports = {
-    generateMetadata, getPricesFromProducts, getMaxPrice, getMinPrice
+    generateMetadata
 }

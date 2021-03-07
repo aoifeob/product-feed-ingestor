@@ -49,6 +49,5 @@ function isExcludedBrand(product){
 }
 
 module.exports ={
-    //TODO: consider removing exports for all but validateProducts method and refactoring tests
-    validateProducts, convertPriceToUSD, isValidProduct, isInStock, isExcludedBrand
+    validateProducts
 }

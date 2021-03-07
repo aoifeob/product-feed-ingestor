@@ -11,6 +11,9 @@
   "author": "John Butler",
   "license": "ISC",
   "dependencies": {
-    "mocha": "^8.3.1"
+    "gunzip-file": "^0.1.1",
+    "mocha": "^8.3.1",
+    "sinon": "^9.2.4",
+    "zlib": "^1.0.5"
   }
 }
