@@ -2,7 +2,6 @@
  * processFeed is the entrypoint to this test but feel free
  * to break up your code in whatever way makes sense to you
 */
-const fs = require("fs");
 const {transformCSVToProductsFile} = require("./service/CSVTransformerService");
 const {ProductsFile} = require("./model/ProductsFile");
 const {writeToCSV} = require("./service/CSVCreatorService");
