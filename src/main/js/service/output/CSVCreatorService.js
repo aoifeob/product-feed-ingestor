@@ -1,4 +1,5 @@
 const fs = require('fs')
+const zlib = require('zlib')
 
 async function writeToCSV(productFile, path) {
 
@@ -7,8 +8,6 @@ async function writeToCSV(productFile, path) {
     if ('' !== formattedData) {
 
         const unzippedCSVPath = path.replace('.gz', '');
-
-        //NOTE: this logic does not behave as expected
 
         await writeToUnzippedCSV(formattedData, unzippedCSVPath);
         gzipCSV(unzippedCSVPath, path)
@@ -20,7 +19,6 @@ async function writeToCSV(productFile, path) {
 }
 
 async function writeToUnzippedCSV(formattedData, path){
-    //NOTE: this function does not behave as expected
     return fs.writeFile(path, formattedData, 'utf8', function (writeError) {
         if (writeError) {
             console.log('Error occurred while attempting to write to CSV.');

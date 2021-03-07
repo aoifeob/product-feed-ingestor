@@ -1,7 +1,7 @@
 const fs = require('fs')
 const zlib = require('zlib');
-const {Product} = require("../model/Product");
-const {ProductsFile} = require("../model/ProductsFile");
+const {Product} = require("../../model/Product");
+const {ProductsFile} = require("../../model/ProductsFile");
 
 async function transformCSVToProductsFile(path) {
     await unzipFile(path);

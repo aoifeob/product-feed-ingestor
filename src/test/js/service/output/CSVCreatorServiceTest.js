@@ -1,7 +1,7 @@
 const assert = require('assert');
-const {getFormattedData} = require("../../../main/js/service/CSVCreatorService");
-const {Product} = require("../../../main/js/model/Product");
-const {ProductsFile} = require("../../../main/js/model/ProductsFile");
+const {getFormattedData} = require("../../../../main/js/service/output/CSVCreatorService");
+const {Product} = require("../../../../main/js/model/Product");
+const {ProductsFile} = require("../../../../main/js/model/ProductsFile");
 
 describe('CSVCreatorService', function () {
 

@@ -1,7 +1,7 @@
 const assert = require('assert');
 const sinon  = require('sinon');
-const {Metadata} = require("../../../main/js/model/Metadata");
-const {writeReport} = require("../../../main/js/service/ReportWriterService");
+const {Metadata} = require("../../../../main/js/model/Metadata");
+const {writeReport} = require("../../../../main/js/service/output/ReportWriterService");
 
 describe('ReportWriterService', function () {
 

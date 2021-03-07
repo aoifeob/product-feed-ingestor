@@ -1,4 +1,4 @@
-const {getProductWithUpdatedPrice} = require("../model/Product");
+const {getProductWithUpdatedPrice} = require("../../model/Product");
 
 const outOfStockIndicator = "out of stock";
 const inStockIndicator = "in stock";

@@ -2,12 +2,12 @@
  * processFeed is the entrypoint to this test but feel free
  * to break up your code in whatever way makes sense to you
 */
-const {transformCSVToProductsFile} = require("./service/CSVTransformerService");
+const {transformCSVToProductsFile} = require("./service/input/CSVTransformerService");
 const {ProductsFile} = require("./model/ProductsFile");
-const {writeToCSV} = require("./service/CSVCreatorService");
-const {writeReport} = require("./service/ReportWriterService");
-const {generateMetadata} = require("./service/MetadataGeneratorService");
-const {validateProducts} = require("./service/ProductValidationService");
+const {writeToCSV} = require("./service/output/CSVCreatorService");
+const {writeReport} = require("./service/output/ReportWriterService");
+const {generateMetadata} = require("./service/metadata/MetadataGeneratorService");
+const {validateProducts} = require("./service/validation/ProductValidationService");
 
 async function processFeed(inputPath, outputPath){
    const inputProductsFile = await transformCSVToProductsFile(inputPath);
@@ -19,7 +19,7 @@ async function processFeed(inputPath, outputPath){
    writeReport(metadata);
 }
 
-processFeed(`${__dirname}/commerce-feed.csv.gz`, `${__dirname}/processed.csv.gz`)
+processFeed(`${__dirname}\\commerce-feed.csv.gz`, `${__dirname}\\processed.csv.gz`)
 
 module.exports = {
   processFeed

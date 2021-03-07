@@ -1,6 +1,6 @@
 const assert = require('assert');
-const {validateProducts} = require("../../../main/js/service/ProductValidationService");
-const {Product} = require("../../../main/js/model/Product");
+const {validateProducts} = require("../../../../main/js/service/validation/ProductValidationService");
+const {Product} = require("../../../../main/js/model/Product");
 
 describe('ProductValidationService', function () {
 

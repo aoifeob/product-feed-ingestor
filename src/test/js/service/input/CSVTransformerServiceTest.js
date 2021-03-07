@@ -1,6 +1,6 @@
 const assert = require('assert');
-const {transformToProductsFile} = require("../../../main/js/service/CSVTransformerService");
-const {Product} = require("../../../main/js/model/Product");
+const {transformToProductsFile} = require("../../../../main/js/service/input/CSVTransformerService");
+const {Product} = require("../../../../main/js/model/Product");
 
 describe('CSVTransformerService', function () {
 

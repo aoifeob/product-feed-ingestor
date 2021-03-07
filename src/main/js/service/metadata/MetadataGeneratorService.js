@@ -1,4 +1,4 @@
-const {Metadata} = require("../model/Metadata");
+const {Metadata} = require("../../model/Metadata");
 
 function generateMetadata(inputProducts, validatedProducts){
     const totalLines = inputProducts.length;

@@ -1,6 +1,6 @@
 const assert = require('assert');
-const {generateMetadata} = require("../../../main/js/service/MetadataGeneratorService");
-const {Product} = require("../../../main/js/model/Product");
+const {generateMetadata} = require("../../../../main/js/service/metadata/MetadataGeneratorService");
+const {Product} = require("../../../../main/js/model/Product");
 
 describe('MetadataGeneratorService', function () {
 
